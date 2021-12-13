@@ -1,0 +1,6 @@
+StdIn.isEmpty() --- ctrl+d return true
+在terminal运行： java Average < a.txt   / java DownloadBinarySearch a.txt < b.txt
+(<前为传入的参数，<后可认为键入的参数)（< 提示系统读取后面的文件做输入流而不是在终端等待user输入）
+1000 100.0 200.0 > data.tx
+java RandomSeq 10 100.0 200.0 > random.txt  (> 将数据写入random.txt）
+通道： java RandomSeq 1000 100.0 200.0 | java Average
