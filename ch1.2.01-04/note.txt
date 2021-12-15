@@ -1,0 +1,2 @@
+return "sum = " + String.format("%.4f", sum);
+accumulator --- 自动初始化的案例
