@@ -1,0 +1,3 @@
+return "sum = " + String.format("%.4f", sum);
+accumulator --- 自动初始化的案例
+adt里需要的private data均由constructor， 经由测试案例的main函数传入。 然后在method中被引用
