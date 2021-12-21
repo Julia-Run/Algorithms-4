@@ -1,0 +1,3 @@
+/* The idea is that ++x increments x and returns that value, while x++ returns x's value and then increments x.*/
+++i 一般不会出错
+参数类型转换 private Item[] a = (Item[]) new Object[N]
