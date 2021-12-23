@@ -1,0 +1,12 @@
+/* The idea is that ++x increments x and returns that value, while x++ returns x's value and then increments x.*/
+++i 一般不会出错
+参数类型转换 private Item[] a = (Item[]) new Object[N]
+stack1 seems better
+Integer a= null; 报错，integer 不可以存储null
+Integer(or int) a = 128  ---- Integer a = new Integer(128) 是object
+    对与-128 ~ 127 范围内的对象，通过valueOf（），返回IntegerCache内的一个object
+    因此，Integer a1=12, Integer a2 = 12 ,a1=a2
+    but nteger b1=1200, Integer b2 = 1200 ,b1!=b2
+    but 使用int，上述情况均为true
+如果要将Node类中使用static，必须如下： public static class Node<Item>，否则无法调用Node类外的Item。但外部class可调用static Node内部的Item
+String不是Iterable的
