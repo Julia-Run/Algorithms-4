@@ -1,0 +1,17 @@
+1. /* The idea is that ++x increments x and returns that value, while x++ returns x's value and then increments x.*/
+   ++i 一般不会出错
+2. 参数类型转换 private Item[] a = (Item[]) new Object[N]
+3. Integer a = null; 报错，integer 不可以存储null
+4. Integer(or int) a = 128  ---- Integer a = new Integer(128) 是object
+    对与-128 ~ 127 范围内的对象，通过valueOf（），返回IntegerCache内的一个object
+    因此，Integer a1=12, Integer a2 = 12 ,a1=a2
+    but nteger b1=1200, Integer b2 = 1200 ,b1!=b2
+    but 使用int，上述情况均为true
+5. 如果要将Node类中使用static，必须如下： public static class Node<Item>，否则无法调用Node类外的Item。但外部class可调用static Node内部的Item  String不是Iterable的.
+6. String为一个非原始数据类型，一些操作如下：s.length() \ s.charAt(i) \ s.inedxOf(item) \ s.indexOf(item,<after>i) \ String[] s.split("//s.") \ s.substring(i,j) \ s.equals(s1) \ int s.compareTo(s1) \ String s.concat(s1) \ int s.hashCode()
+
+ch1.4 exercise:
+1. increase memory Java allocates: > java -Xmx200m Hello < 200m = 200 MB = 200e6 Bytes = 200e6*8 Bits
+   increase stack space java allocates: > java -Xss200k Hello < 200k = 200 kB = 200e3 Bytes
+   java -Xmx200m -Xss200k Hello
+2. padding(字节填充)： Padding makes all objects take space that is a mulitple of 8 bytes. This can waste some memory but it speeds up memory access and garbage collection.
