@@ -1,0 +1,8 @@
+job1  100
+job2  80
+job3 200
+job4 500
+job5 15
+job6 180
+job7 330
+job8 35

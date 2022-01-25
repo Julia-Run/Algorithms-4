@@ -1,0 +1,10 @@
+Processor 6  :  job11  392 s  -->  job28  359 s  -->  job10   36 s  -->  Total Time = 787
+Processor 5  :  job9   392 s  -->  job8   383 s  -->  job29   33 s  -->  Total Time = 808
+Processor 4  :  job25  422 s  -->  job5   329 s  -->  job0    63 s  -->  Total Time = 814
+Processor 2  :  job6   396 s  -->  job14  351 s  -->  job17   84 s  -->  Total Time = 831
+Processor 7  :  job22  448 s  -->  job15  298 s  -->  job13  125 s  -->  Total Time = 871
+Processor 8  :  job24  436 s  -->  job1   306 s  -->  job21  134 s  -->  Total Time = 876
+Processor 3  :  job3   449 s  -->  job7   270 s  -->  job27  182 s  -->  Total Time = 901
+Processor 0  :  job20  466 s  -->  job19  239 s  -->  job26  212 s  -->  Total Time = 917
+Processor 1  :  job16  451 s  -->  job12  262 s  -->  job4   206 s  -->  Total Time = 919
+Processor 9  :  job18  454 s  -->  job2   248 s  -->  job23  228 s  -->  Total Time = 930
