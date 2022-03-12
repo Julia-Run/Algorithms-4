@@ -39,7 +39,7 @@
     <option name="width" value="938" />
     <option name="height" value="765" />
   </component>
-  <component name="ProjectId" id="25d3JB2F9E5PFeEtxE1NZ8MB2bJ" />
+  <component name="ProjectId" id="25d2xu51EQvoAeI5ZM2KeXSsTU5" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <showLibraryContents PackagesPane="false" />
@@ -74,31 +74,11 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.BSTrewrite">
-    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BST" />
-      <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BSTrewrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BSTrewrite" />
-      <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+  <component name="RunManager">
+    <configuration name="RBbst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RBbst" />
       <module name="Algorithms, Part I" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,24 +86,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BSTrewrite" />
-        <item itemvalue="Application.BST" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.RBbst" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <created>1645843062526</created>
+      <created>1645842893600</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645843062526</updated>
-      <workItem from="1645843063678" duration="109000" />
-      <workItem from="1645843183910" duration="703000" />
-      <workItem from="1645844324330" duration="2792000" />
-      <workItem from="1645847178619" duration="13132000" />
-      <workItem from="1646037956823" duration="18000" />
+      <updated>1645842893600</updated>
+      <workItem from="1645842894724" duration="161000" />
+      <workItem from="1646038102078" duration="2005000" />
+      <workItem from="1646040112763" duration="2409000" />
     </task>
     <servers />
   </component>

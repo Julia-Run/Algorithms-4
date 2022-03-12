@@ -39,7 +39,7 @@
     <option name="width" value="938" />
     <option name="height" value="765" />
   </component>
-  <component name="ProjectId" id="25d3JB2F9E5PFeEtxE1NZ8MB2bJ" />
+  <component name="ProjectId" id="22K9f5uBHQmHMushM61M4h6zbZn" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <showLibraryContents PackagesPane="false" />
@@ -64,8 +64,13 @@
     </panes>
   </component>
   <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showModules" value="false" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -73,57 +78,38 @@
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ch3.2_exercise" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.BSTrewrite">
-    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.BSTree">
+    <configuration name="BST" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BST" />
       <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
-    <configuration name="BSTrewrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BSTrewrite" />
+    <configuration name="BSTree" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="BSTree" />
       <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="TreeDrawer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="TreeDrawer" />
       <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BSTrewrite" />
-        <item itemvalue="Application.BST" />
-        <item itemvalue="Application.Test" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="Application" factoryName="Application">
+      <module name="Algorithms, Part I" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <created>1645843062526</created>
+      <created>1645846737851</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645843062526</updated>
-      <workItem from="1645843063678" duration="109000" />
-      <workItem from="1645843183910" duration="703000" />
-      <workItem from="1645844324330" duration="2792000" />
-      <workItem from="1645847178619" duration="13132000" />
-      <workItem from="1646037956823" duration="18000" />
+      <updated>1645846737851</updated>
+      <workItem from="1645846739080" duration="1273000" />
     </task>
     <servers />
   </component>
