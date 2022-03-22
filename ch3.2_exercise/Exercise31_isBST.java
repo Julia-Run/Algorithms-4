@@ -9,7 +9,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 import java.util.NoSuchElementException;
 
-public class BSTrewrite<Key extends Comparable<Key>, Val> {
+public class Exercise31_isBST<Key extends Comparable<Key>, Val> {
 
     /* variables****************************************/
     private Node root;
@@ -176,6 +176,7 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
         else return select(x.right, i - j - 1);
     }
 
+    //  nums oKey which <= k.
     public int rank(Key k) {
         if (k == null) throw new IllegalArgumentException("Key can not be null");
         return rank(root, k);
@@ -228,9 +229,9 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
             if (x.left == null) return x.right;
             if (x.right == null) return x.left;
             Node t = x;
-            x = min(x.right);
+            x = min(t.right);
+            x.right = deleteMin(t.right);
             x.left = t.left;
-            x.right = deleteMin(t);
         }
         x.nodeNums = size(x.left) + size(x.right) + 1;
         return x;
@@ -248,7 +249,7 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
         show(x.right);
     }
 
-    // iterable
+    // iterable -- Queue
     public Iterable<Key> keys() {
         return keys(min(), max());
     }
@@ -268,74 +269,50 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
         if (end > 0) keys(x.right, q, lo, hi);
     }
 
+    // try to check the order, nodeNums, select/rank, --- then if BST or not
+    public boolean isOrdered() {  // or is Ordered()
+        return isOrdered(root, null, null);
+    }
+
+    public boolean isOrdered(Node x, Key min, Key max) {
+        // duty: does this binary tree satisfy symmetric order
+        // this process can also make sure the keys are in order.
+        if (x == null) return true; // end situation
+        if (min != null && min.compareTo(x.key) >= 0)
+            return false; // check during the process to right
+        if (max != null && max.compareTo(x.key) <= 0)
+            return false;  // check during the process to left
+        return isOrdered(x.left, min, x.key) && isOrdered(x.right, x.key, max);
+        // && left first: go left ... to the end, then go right ... to the end;
+    }
+
+    public boolean isSizeconsist() {
+        return isSizeconsist(root);
+    }
+
+    public boolean isSizeconsist(Node x) {
+        if (x == null) return true;  // end situation
+        if (size(x) != size(x.left) + size(x.right) + 1)
+            return false; // do sth. during the process;
+        return isSizeconsist(x.left) && isSizeconsist(x.right);
+    }
+
+    public boolean isRanked() {
+        // rank(select(i)) == i ;
+        for (int i = 0; i < size(); ++i) {
+            if (rank(select(i)) != i) return false;
+        }
+        for (Key k : keys()) {
+            if (k != select(rank(k))) return false;
+        }
+        return true;
+    }
+
+    public boolean isBST() {
+        return isOrdered() && isSizeconsist() && isRanked();
+    }
 
     public static void main(String[] args) {
-        BSTrewrite<Integer, String> st = new BSTrewrite<Integer, String>();
-        StdOut.println(st.isEmpty());
-        StdOut.println(st.size());
-        st.put(1, "a");
-        st.draw();
-        st.put(3, "c");
-        st.draw();
-        st.put(2, "b");
-        st.draw();
-        st.put(5, "e");
-        st.draw();
-        st.put(-1, "A");
-        st.draw();
-        st.put(0, "0");
-        st.draw();
-        StdOut.println("***************Testing of get,size,isEmpty**************"
-                               + "*********************************************");
-        StdOut.println(st.get(2));
-        StdOut.println(st.size());
-        StdOut.println(st.isEmpty());
-        StdOut.println("***************Testing of min, max**************"
-                               + "*********************************************");
-        st.draw();
-        StdOut.println(st.min());
-        StdOut.println(st.max());
-        StdOut.println("***************Testing of floor, ceiling**************"
-                               + "*********************************************");
-        st.draw();
-        StdOut.println(st.floor(8));
-        StdOut.println(st.floor(1));
-        StdOut.println(st.floor(3));
-        // StdOut.println(st.floor(-8));
-        StdOut.println(st.ceiling(3));
-        StdOut.println(st.ceiling(1));
-        StdOut.println(st.ceiling(-10));
-        // StdOut.println(st.ceiling(10));
-        StdOut.println("***************Testing of select, rank**************"
-                               + "*********************************************");
-        st.draw();
-        StdOut.println(st.select(2));
-        StdOut.println(st.rank(6));
-        StdOut.println(st.rank(5));
-        StdOut.println(st.rank(-1));
-        StdOut.println("***************Testing of deleteMin, deleteMax, delete**************"
-                               + "*********************************************");
-        st.draw();
-        st.deleteMin();
-        st.draw();
-        st.deleteMax();
-        st.draw();
-        st.put(-2, "B");
-        st.put(-3, "C");
-        st.put(8, "h");
-        st.draw();
-        st.delete(0);
-        st.draw();
-        st.show();
-        StdOut.println();
-        for (Integer i : st.keys()) {
-            StdOut.print(i + " --> ");
-        }
-        StdOut.print("this is the end mark");
-        StdOut.println();
-        StdOut.print("the height of the tree now is " + st.height());
-        // for (int i = 0; i < st.size(); i++) {
-        //     StdOut.print(st.keys() + " --> ");
-        // }
+
     }
 }

@@ -73,10 +73,22 @@
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ch3.2_exercise" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BSTrb">
+    <configuration name="BSTrb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BSTrb" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RBbst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RBbst" />
       <module name="Algorithms, Part I" />
@@ -84,8 +96,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RBbsts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RBbsts" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BSTrb" />
+        <item itemvalue="Application.RBbsts" />
         <item itemvalue="Application.RBbst" />
       </list>
     </recent_temporary>
@@ -100,6 +121,11 @@
       <workItem from="1645842894724" duration="161000" />
       <workItem from="1646038102078" duration="2005000" />
       <workItem from="1646040112763" duration="2409000" />
+      <workItem from="1647230644632" duration="29000" />
+      <workItem from="1647431365584" duration="750000" />
+      <workItem from="1647506371723" duration="5183000" />
+      <workItem from="1647589977887" duration="8404000" />
+      <workItem from="1647679199286" duration="17678000" />
     </task>
     <servers />
   </component>
@@ -141,5 +167,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

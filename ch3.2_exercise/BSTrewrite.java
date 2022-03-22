@@ -176,6 +176,7 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
         else return select(x.right, i - j - 1);
     }
 
+    //  nums oKey which <= k.
     public int rank(Key k) {
         if (k == null) throw new IllegalArgumentException("Key can not be null");
         return rank(root, k);
@@ -228,9 +229,9 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
             if (x.left == null) return x.right;
             if (x.right == null) return x.left;
             Node t = x;
-            x = min(x.right);
+            x = min(t.right);
+            x.right = deleteMin(t.right); // keep this sequence
             x.left = t.left;
-            x.right = deleteMin(t);
         }
         x.nodeNums = size(x.left) + size(x.right) + 1;
         return x;
@@ -248,8 +249,9 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
         show(x.right);
     }
 
-    // iterable
+    // iterable -- Queue
     public Iterable<Key> keys() {
+        if (isEmpty()) return new Queue<Key>();
         return keys(min(), max());
     }
 
@@ -324,13 +326,11 @@ public class BSTrewrite<Key extends Comparable<Key>, Val> {
         st.put(-3, "C");
         st.put(8, "h");
         st.draw();
-        st.delete(0);
+        st.delete(3);
         st.draw();
         st.show();
         StdOut.println();
-        for (Integer i : st.keys()) {
-            StdOut.print(i + " --> ");
-        }
+        for (Integer i : st.keys()) StdOut.print(i + " --> ");
         StdOut.print("this is the end mark");
         StdOut.println();
         StdOut.print("the height of the tree now is " + st.height());

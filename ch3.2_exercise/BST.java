@@ -168,9 +168,10 @@ public class BST<Key extends Comparable<Key>, Val> {
             if (x.left == null) return x.right;
             if (x.right == null) return x.left;
             Node t = x;
-            x = min(x.right);  /* 右边最小*/
-            x.left = t.left;
+            x = min(t.right);  /* 右边最小*/
             x.right = delMin(t.right);
+            x.left = t.left;
+
         }
         x.n = size(x.left) + size(x.right) + 1;
         return x;
