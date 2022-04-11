@@ -21,6 +21,9 @@ public class TreeDrawerRB {
 
         /** Get text to be printed */
         String getText();
+
+        /* redNode*/
+        boolean redNode();
     }
 
 
@@ -32,8 +35,8 @@ public class TreeDrawerRB {
     public static void draw(PrintableNode root) {
         List<List<String>> lines = new ArrayList<List<String>>();
 
-        List<PrintableNode> level = new ArrayList<PrintableNode>();  // current
-        List<PrintableNode> next = new ArrayList<PrintableNode>();  // next
+        List<PrintableNode> level = new ArrayList<PrintableNode>();
+        List<PrintableNode> next = new ArrayList<PrintableNode>();
 
         level.add(root);
         int nn = 1;
@@ -53,7 +56,14 @@ public class TreeDrawerRB {
                     next.add(null);
                 }
                 else {
-                    String aa = n.getText();
+                    String aa = "";
+                    if (n.redNode()) {
+                        aa = n.getText() + "<";
+                    }
+                    else {
+                        aa = n.getText() + ">";
+                    }
+
                     line.add(aa);
                     if (aa.length() > widest) widest = aa.length() / 3;
 
@@ -135,7 +145,15 @@ public class TreeDrawerRB {
                 for (int k = 0; k < gap1; k++) {
                     System.out.print(" ");
                 }
-                System.out.print(f);
+                //
+                String ANSI_RESET = "\u001B[0m";
+                String ANSI_RED = "\u001B[31m";
+                if (f.length() > 0 && f.charAt(f.length() - 1) == '<') {
+                    System.out.print(ANSI_RED + f + ANSI_RESET);
+                }
+                else {
+                    System.out.print(f);
+                }
                 for (int k = 0; k < gap2; k++) {
                     System.out.print(" ");
                 }

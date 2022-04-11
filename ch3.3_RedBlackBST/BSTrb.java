@@ -6,7 +6,6 @@
 
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.NoSuchElementException;
 
@@ -15,7 +14,7 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
     private final boolean RED = true;
     private final boolean BLACK = false;
 
-    private class Node implements TreeDrawer.PrintableNode {
+    private class Node implements TreeDrawerRB.PrintableNode {
         private Key key;
         private Val val;
         private int size;
@@ -29,23 +28,27 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
             color = c;
         }
 
-        public TreeDrawer.PrintableNode getLeft() {
+        public TreeDrawerRB.PrintableNode getLeft() {
             return left;
         }
 
-        public TreeDrawer.PrintableNode getRight() {
+        public TreeDrawerRB.PrintableNode getRight() {
             return right;
         }
 
         public String getText() {
             return key + "";
         }
+
+        public boolean redNode() {
+            return color;
+        }
     }
 
     // general func
 
     public void draw() {
-        TreeDrawer.draw(root);
+        TreeDrawerRB.draw(root);
     }
 
     public boolean isRED(Node x) {
@@ -90,14 +93,21 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
     }
 
     private void flipColors(Node x) {
-        if (x != null && x.left != null && x.right != null) { // add if conditions
-            x.color = RED;
-            x.left.color = BLACK;
-            x.right.color = BLACK;
+        // if (x != null && x.left != null && x.right != null) { // add if conditions
+        //     x.color = RED;
+        //     x.left.color = BLACK;
+        //     x.right.color = BLACK;
+        // // this will lead to error.
+        // }
+        if (x != null) {
+            x.color = !x.color;
+            if (x.left != null) x.left.color = !x.left.color;
+            if (x.right != null) x.right.color = !x.right.color;
         }
     }
 
     private Node balance(Node x) {
+        if (x == null) return null;
         if (!isRED(x.left) && isRED(x.right)) x = rotateLeft(x);
         if (isRED(x.left) && isRED(x.left.left)) x = rotateRight(x);
         if (isRED(x.left) && isRED(x.right)) flipColors(x);
@@ -108,7 +118,7 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
     // put
     public void put(Key k, Val v) {
         if (k == null) throw new IllegalArgumentException("k is null");
-        // if (v == null) delete(k);
+        if (v == null) delete(k);
         root = put(root, k, v);
         root.color = BLACK; // make sure root is black;
     }
@@ -374,35 +384,36 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
     }
 
     public static void main(String[] args) {
-        // BSTrb<Integer, String> st = new BSTrb<Integer, String>();
-        // StdOut.println(st.isEmpty());
-        // StdOut.println(st.size());
-        // st.put(1, "a");
-        // st.draw();
-        // st.put(3, "c");
-        // st.draw();
-        // st.put(2, "b");
-        // st.draw();
-        // st.put(5, "e");
-        // st.draw();
-        // st.put(-1, "A");
-        // st.draw();
-        // st.put(0, "0");
-        // st.draw();
-        // StdOut.println(st.get(0) + "  " + st.get(5) + "  " + st.get(-2));
-        // st.deleteMin();
-        // st.draw();
-        // st.deleteMax();
-        // st.draw();
-        // st.delete(2);
-        // st.draw();
+        BSTrb<Integer, String> st = new BSTrb<Integer, String>();
+        StdOut.println(st.isEmpty());
+        StdOut.println(st.size());
+        st.put(1, "a");
+        st.draw();
+        st.put(3, "c");
+        st.draw();
+        st.put(2, "b");
+        st.draw();
+        st.put(5, "e");
+        st.draw();
+        st.put(-1, "A");
+        st.draw();
+        st.put(0, "0");
+        st.draw();
+        StdOut.println(st.get(0) + "  " + st.get(5) + "  " + st.get(-2));
+        st.deleteMin();
+        st.draw();
+        st.deleteMax();
+        st.draw();
+        st.delete(2);
+        st.draw();
 
-
+/*
         String test = "S E A R C H E X A M P L E";
         String[] keys = test.split(" ");
         BSTrb<String, Integer> st = new BSTrb<String, Integer>();
         for (int i = 0; i < keys.length; i++)
             st.put(keys[i], i);
+        st.draw();
 
         StdOut.println("size = " + st.size());
         StdOut.println("min  = " + st.min());
@@ -450,17 +461,20 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
         for (int i = 0; i < st.size() / 2; i++) {
             st.deleteMin();
         }
+        st.draw();
 
         StdOut.println("After deleting the smallest " + st.size() / 2 + " keys");
         StdOut.println("--------------------------------");
         for (String s : st.keys())
             StdOut.println(s + " " + st.get(s));
         StdOut.println();
+        st.draw();
 
         // delete all the remaining keys
         while (!st.isEmpty()) {
             st.delete(st.select(st.size() / 2));
         }
+        st.draw();
 
         StdOut.println("After deleting the remaining keys");
         StdOut.println("--------------------------------");
@@ -475,6 +489,7 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
         for (String s : st.keys())
             StdOut.println(s + " " + st.get(s));
         StdOut.println();
+        st.draw();
 
         StdOut.println();
 
@@ -501,6 +516,6 @@ public class BSTrb<Key extends Comparable<Key>, Val> {
         }
 
         StdOut.println("size = " + st2.size());
-
+*/
     }
 }
