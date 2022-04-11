@@ -74,6 +74,9 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ch3.2_exercise" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
@@ -129,6 +132,8 @@
       <workItem from="1648128753803" duration="2184000" />
       <workItem from="1648212431397" duration="63000" />
       <workItem from="1648305447871" duration="5399000" />
+      <workItem from="1649668278092" duration="11000" />
+      <workItem from="1649675006379" duration="342000" />
     </task>
     <servers />
   </component>
