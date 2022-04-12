@@ -38,13 +38,22 @@ public class InsertionImprovement {
     //     }
     // }
 
+    // public static void sort(Comparable[] a) {
+    //     for (int i = 1; i < a.length; ++i) {
+    //         Comparable temp = a[i];
+    //         int j = i;
+    //         for (; j - 1 >= 0 && less(temp, a[j - 1]); --j) {
+    //             a[j] = a[j - 1];
+    //         }
+    //         a[j] = temp;
+    //     }
+    // }
     public static void sort(Comparable[] a) {
         for (int i = 1; i < a.length; ++i) {
             Comparable temp = a[i];
             int j = i;
-            for (; j - 1 >= 0 && less(temp, a[j - 1]); --j) {
-                a[j] = a[j - 1];
-            }
+            for (; j - 1 >= 0 && less(temp, a[j - 1]); --j) a[j] = a[j - 1];
+            // j is the index of current black box;
             a[j] = temp;
         }
     }

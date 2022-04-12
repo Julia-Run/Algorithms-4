@@ -26,9 +26,8 @@ public class Insertion {
 
     public static void sort(Comparable[] a) {
         for (int i = 1; i < a.length; ++i) {
-            for (int j = i; j - 1 >= 0; --j) {
-                if (less(a[j], a[j - 1])) exchange(a, j, j - 1);
-            }
+            for (int j = i; j - 1 >= 0 && less(a[j], a[j - 1]); --j) exchange(a, j, j - 1);
+            // && make sure no need to run into the loop if a[j-1]<a[j]
         }
     }
 
