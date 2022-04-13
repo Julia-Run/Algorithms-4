@@ -91,14 +91,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShellSort">
-    <configuration name="BSTrb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BSTrb" />
-      <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Quick">
     <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Insertion" />
       <module name="Algorithms, Part I" />
@@ -113,8 +106,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Selction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Selction" />
+    <configuration name="MergeSort2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeSort2" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Quick" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Quick" />
       <module name="Algorithms, Part I" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Quick" />
+        <item itemvalue="Application.MergeSort2" />
         <item itemvalue="Application.ShellSort" />
         <item itemvalue="Application.InsertionImprovement" />
         <item itemvalue="Application.Insertion" />
-        <item itemvalue="Application.Selction" />
-        <item itemvalue="Application.BSTrb" />
       </list>
     </recent_temporary>
   </component>

@@ -24,27 +24,12 @@ public class InsertionImprovement {
         StdOut.println();
     }
 
-    // public static void sort_1(Comparable[] a) {
-    //     for (int i = 1; i < a.length; ++i) {
-    //         Comparable temp = a[i];
-    //         int k = i;
-    //         for (int j = i; j - 1 >= 0; --j) {
-    //             if (less(temp, a[j - 1])) {
-    //                 a[j] = a[j - 1];
-    //                 k = j - 1;
-    //             }
-    //         }
-    //         a[k] = temp;
-    //     }
-    // }
-
     // public static void sort(Comparable[] a) {
     //     for (int i = 1; i < a.length; ++i) {
     //         Comparable temp = a[i];
     //         int j = i;
-    //         for (; j - 1 >= 0 && less(temp, a[j - 1]); --j) {
-    //             a[j] = a[j - 1];
-    //         }
+    //         for (; j - 1 >= 0 && less(temp, a[j - 1]); --j) a[j] = a[j - 1];
+    //         // j is the index of current black box;
     //         a[j] = temp;
     //     }
     // }
@@ -53,7 +38,6 @@ public class InsertionImprovement {
             Comparable temp = a[i];
             int j = i;
             for (; j - 1 >= 0 && less(temp, a[j - 1]); --j) a[j] = a[j - 1];
-            // j is the index of current black box;
             a[j] = temp;
         }
     }

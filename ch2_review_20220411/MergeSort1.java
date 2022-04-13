@@ -6,7 +6,8 @@
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class Selction {
+public class MergeSort1 {
+
     public static boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
     }
@@ -24,24 +25,24 @@ public class Selction {
         StdOut.println();
     }
 
-    // public static void sort(Comparable[] a) {
-    //     for (int i = 0; i < a.length; ++i) {
-    //         int min = i;
-    //         for (int j = i + 1; j < a.length; ++j) {
-    //             // right > left, the last element must be the largest one, there will be no error
-    //             if (less(a[j], a[min])) min = j;  // "if" can only be put inside this for
-    //         }
-    //         exchange(a, i, min);
-    //     }
-    // }
-    public static void sort(Comparable[] a) {
-        for (int i = 0; i < a.length; ++i) {
-            int min = i;
-            for (int j = i + 1; j < a.length; ++j) {
-                if (less(a[j], a[min])) min = j;
-            }
-            exchange(a, i, min);
+    public static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
+        if (lo + 1 >= hi) return;  // one element left [  )
+        int mid = lo + (hi - lo) / 2;
+        sort(a, aux, lo, mid);
+        sort(a, aux, mid, hi);
+        for (int i = lo; i < hi; ++i) aux[i] = a[i];
+        int i = lo, j = mid;
+        for (int k = lo; k < hi; ++k) {
+            if (i >= mid) a[k] = aux[j++];
+            else if (j >= hi) a[k] = aux[i++];
+            else if (less(aux[i], aux[j])) a[k] = aux[i++];
+            else a[k] = aux[j++];
         }
+    }
+
+    public static void sort(Comparable[] a) {
+        Comparable[] aux = new Comparable[a.length];
+        sort(a, aux, 0, a.length);
     }
 
 
