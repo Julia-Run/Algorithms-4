@@ -96,10 +96,24 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DfsPath">
+  <component name="RunManager" selected="Application.Bridge">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BfsPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BfsPath" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bridge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bridge" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="DfsPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -116,8 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyGraph" />
+    <configuration name="Paralell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Paralell" />
       <module name="Algorithms, Part I" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,9 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bridge" />
+        <item itemvalue="Application.Paralell" />
+        <item itemvalue="Application.BfsPath" />
         <item itemvalue="Application.DfsPath" />
         <item itemvalue="Application.DfsSearch" />
-        <item itemvalue="Application.MyGraph" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +160,9 @@
       <workItem from="1650606109904" duration="4319000" />
       <workItem from="1650696082992" duration="1222000" />
       <workItem from="1650874947240" duration="10708000" />
+      <workItem from="1650959803291" duration="5439000" />
+      <workItem from="1651045826052" duration="5953000" />
+      <workItem from="1651135303553" duration="2102000" />
     </task>
     <servers />
   </component>

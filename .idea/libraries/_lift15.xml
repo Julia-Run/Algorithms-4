@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name=".lift15">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ch1.3.03/.lift/algs4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ch1.3.03/.lift/checkstyle-lift.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
