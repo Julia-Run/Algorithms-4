@@ -93,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DirectedCycleM">
+  <component name="RunManager" selected="Application.Exercise31_StrongComponent">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -113,8 +113,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EulerCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EulerCycle" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise31_StrongComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise31_StrongComponent" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exercise31_StrongComponent" />
+        <item itemvalue="Application.EulerCycle" />
         <item itemvalue="Application.DirectedCycleM" />
         <item itemvalue="Application.DirectedDFS" />
       </list>
@@ -134,6 +150,8 @@
       <workItem from="1651216304448" duration="4256000" />
       <workItem from="1651300368074" duration="3943000" />
       <workItem from="1651374915408" duration="10000" />
+      <workItem from="1651478891767" duration="5362000" />
+      <workItem from="1651560374253" duration="4265000" />
     </task>
     <servers />
   </component>
