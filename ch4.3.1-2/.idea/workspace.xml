@@ -77,9 +77,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -121,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SCC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SCC" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SCC" />
       <module name="Algorithms, Part I" />
       <method v="2">
@@ -130,7 +133,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SCC" />
         <item itemvalue="Application.Exercise31_StrongComponent" />
         <item itemvalue="Application.EulerCycle" />
         <item itemvalue="Application.DirectedCycleM" />

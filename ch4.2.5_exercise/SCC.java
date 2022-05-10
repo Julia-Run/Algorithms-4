@@ -9,7 +9,8 @@ import edu.princeton.cs.algs4.Digraph;
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
-//  java -classpath /home/dora/Codes/Algorithms-4/ch4.2.5_exercise:/home/dora/Codes/Algorithms-4/ch4.2.5_exercise/.lift/algs4.jar SCC mediumDG.txt
+//  javac -cp .:.lift/algs4.jar SCC.java
+//  java -cp .:.lift/algs4.jar SCC mediumDG.txt
 
 public class SCC {
 
