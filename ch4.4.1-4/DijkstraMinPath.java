@@ -65,9 +65,9 @@ public class DijkstraMinPath {
         DijkstraMinPath dPath = new DijkstraMinPath(g, s);
         for (int v = s; v < g.V(); ++v) {
             if (dPath.havePathTo(v)) {
-                StdOut.print(s + " to " + v );
+                StdOut.print(s + " to " + v);
                 StdOut.printf(" (%.2f):  ", dPath.disTo[v]);
-                for (DirectedEdge e: dPath.pathTo(v)){
+                for (DirectedEdge e : dPath.pathTo(v)) {
                     StdOut.print(e + " ");
                 }
                 StdOut.println();
