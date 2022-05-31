@@ -1,0 +1,4 @@
+Assumptions: weighted, DirectedEdge, No Circle, weight are allowed to be negative
+Question: find min path within linear time.
+Answer: Using Dijkstra and Topological order;
+This can be applied to Paralell mission allocation with prioraty limited;
