@@ -2,3 +2,11 @@ Assumptions: weighted, DirectedEdge, No Circle, weight are allowed to be negativ
 Question: find min path within linear time.
 Answer: Using Dijkstra and Topological order;
 This can be applied to Paralell mission allocation with prioraty limited;
+
+1st Time:
+DijkstraMinPath
+PathMin
+
+2nd Time:
+Dijkstra
+TopoMIN
