@@ -1,0 +1,11 @@
+EdgeWeightedDirectedGraph:
+    01, Directed Edge,
+    02, Graphe
+minipath:
+    01, dijsktra, positive weight, single s
+    02, TopoMin, no circle
+    03, all s
+maxPath:
+    01, copy g, change to minus
+    02, POSITIVE --> NEGATIVE
+Mission: this is application of max path

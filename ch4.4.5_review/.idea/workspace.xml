@@ -87,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Jobs">
+  <component name="RunManager" selected="Application.Task">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -100,13 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DijkstraMinPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DijkstraMinPath" />
-      <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Jobs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Jobs" />
       <module name="Algorithms, Part I" />
@@ -114,8 +107,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathMin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PathMin" />
+    <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task" />
       <module name="Algorithms, Part I" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,13 +121,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TopoMin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TopoMin" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task" />
+        <item itemvalue="Application.TopoMin" />
+        <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.Jobs" />
         <item itemvalue="Application.TopoMIN" />
-        <item itemvalue="Application.Dijkstra" />
-        <item itemvalue="Application.PathMin" />
-        <item itemvalue="Application.DijkstraMinPath" />
       </list>
     </recent_temporary>
   </component>
