@@ -78,9 +78,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.E12_EWDGcircle">
+  <component name="RunManager" selected="Application.E28MaxPath">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -107,11 +108,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="E28MaxPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="E28MaxPath" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.E12_EWDGcircle" />
-        <item itemvalue="Application.Arbitrage" />
+        <item itemvalue="Application.E28MaxPath" />
         <item itemvalue="Application.BellmanFordMinPath" />
+        <item itemvalue="Application.Arbitrage" />
+        <item itemvalue="Application.E12_EWDGcircle" />
       </list>
     </recent_temporary>
   </component>
@@ -125,6 +134,7 @@
       <workItem from="1645842894724" duration="161000" />
       <workItem from="1647229590499" duration="579000" />
       <workItem from="1657271478294" duration="3969000" />
+      <workItem from="1657957998520" duration="3353000" />
     </task>
     <servers />
   </component>

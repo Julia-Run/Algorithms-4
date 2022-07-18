@@ -85,6 +85,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -115,7 +116,7 @@
       <updated>1645842893600</updated>
       <workItem from="1645842894724" duration="161000" />
       <workItem from="1647229590499" duration="579000" />
-      <workItem from="1657271478294" duration="3969000" />
+      <workItem from="1657271478294" duration="4609000" />
     </task>
     <servers />
   </component>
