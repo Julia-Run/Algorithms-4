@@ -39,7 +39,7 @@ public class E39_LazyDijkstra {
         visit(g, s);
         while (!pq.isEmpty()) {
             DirectedEdge e = pq.delMin();
-            int v = e.from(), w = e.to();
+            int w = e.to();
             if (!marked[w]) visit(g, w);   // lazy, so w might already have been relaxed
         }
     }
