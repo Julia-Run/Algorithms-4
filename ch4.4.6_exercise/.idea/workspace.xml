@@ -81,17 +81,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.E34_MonoMinPath">
+  <component name="RunManager" selected="Application.E39_LazyDijkstra">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Arbitrage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arbitrage" />
-      <module name="Algorithms, Part I" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="BellmanFordMinPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -115,6 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="E39_LazyDijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="E39_LazyDijkstra" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Exercise34_MonotonicShortestPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exercise34_MonotonicShortestPath" />
       <module name="Algorithms, Part I" />
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.E34_MonoMinPath" />
+        <item itemvalue="Application.E39_LazyDijkstra" />
         <item itemvalue="Application.Exercise34_MonotonicShortestPath" />
+        <item itemvalue="Application.E34_MonoMinPath" />
         <item itemvalue="Application.E28MaxPath" />
         <item itemvalue="Application.BellmanFordMinPath" />
-        <item itemvalue="Application.Arbitrage" />
       </list>
     </recent_temporary>
   </component>
